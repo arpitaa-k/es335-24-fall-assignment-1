@@ -1,0 +1,143 @@
+[33mcommit 914de2e205392168ef7c408f161c0e3d20df5501[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Darpana-iitgn <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 18:15:37 2024 +0530
+
+    Delete task_1/test directory
+
+[33mcommit b6530856ee9206ddfe40f9c432ec501eb1a5971c[m
+Merge: e131e3c 6083ce5
+Author: Darpana-IITGN <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 18:12:46 2024 +0530
+
+    Merge branch 'master' of https://github.com/arpitaa-k/es335-24-fall-assignment-1
+
+[33mcommit e131e3c51cf24c52ea3ab021ffd026f171a08aad[m
+Author: Darpana-IITGN <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 18:12:35 2024 +0530
+
+    Added Dataset
+
+[33mcommit 6083ce56e1eb20785d4e3d262e2693a9ae039086[m
+Author: IshikaPatel01 <143334294+IshikaPatel01@users.noreply.github.com>
+Date:   Sat Aug 17 18:08:55 2024 +0530
+
+    Add files via upload
+
+[33mcommit 39d809fe2792cb4d2ea75828b5ec55ad51de1ad4[m
+Author: IshikaPatel01 <143334294+IshikaPatel01@users.noreply.github.com>
+Date:   Sat Aug 17 18:05:02 2024 +0530
+
+    Add files via upload
+
+[33mcommit fc1d202e20d594ff4039452933df3fc57289bcd9[m
+Author: IshikaPatel01 <143334294+IshikaPatel01@users.noreply.github.com>
+Date:   Sat Aug 17 17:59:18 2024 +0530
+
+    Create xyz
+
+[33mcommit 552aeeaccb8f4e0f98d038d2d1519322b8b67312[m
+Author: Darpana-iitgn <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 17:53:44 2024 +0530
+
+    Create Inertial Signals folder
+
+[33mcommit d9b28b1841359ea118a64fbe97833b40a4a0d882[m
+Author: IshikaPatel01 <143334294+IshikaPatel01@users.noreply.github.com>
+Date:   Sat Aug 17 17:52:19 2024 +0530
+
+    Add files via upload
+
+[33mcommit ac677c63ff943219c08d71d1aa70bee878e930bb[m
+Author: IshikaPatel01 <143334294+IshikaPatel01@users.noreply.github.com>
+Date:   Sat Aug 17 17:51:30 2024 +0530
+
+    Add files via upload
+
+[33mcommit 3dafc6d187f78e81c4bc9ec583d1b61880bff618[m
+Author: Darpana-iitgn <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 17:46:34 2024 +0530
+
+    Delete y
+
+[33mcommit b9eac0d0235aa81bb3d9cc2a1cfd485c2c91af53[m
+Author: Darpana-iitgn <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 17:44:21 2024 +0530
+
+    Added y_train subject_train
+
+[33mcommit 53b692d988ac628da8ccf26fa778d785f45fb755[m
+Author: Darpana-iitgn <23110085@iitgn.ac.in>
+Date:   Sat Aug 17 17:43:32 2024 +0530
+
+    Create y
+
+[33mcommit 11c7d7f0b52c4aa5832fbc6cfce27c2277da69df[m
+Author: Vanshrichardiya <143334266+Vanshrichardiya@users.noreply.github.com>
+Date:   Sat Aug 17 17:38:16 2024 +0530
+
+    Delete task_1/file1
+
+[33mcommit 8fcbf1fa28bfc863eb0690f6f88a0362c80b3bfa[m
+Author: arpitaa-k <23110045@iitgn.ac.in>
+Date:   Sat Aug 17 17:36:52 2024 +0530
+
+    Add files via upload
+
+[33mcommit 5a7936caf189c96de47e71b64c04e32d5ece06ab[m
+Author: arpitaa-k <23110045@iitgn.ac.in>
+Date:   Sat Aug 17 17:29:10 2024 +0530
+
+    Add files via upload
+
+[33mcommit 86cdba251963924ab037cd8fa43351a58a547f64[m
+Author: arpitaa-k <23110045@iitgn.ac.in>
+Date:   Sat Aug 17 17:27:39 2024 +0530
+
+    Add files via upload
+
+[33mcommit 65be4c9bc7a45c866c8b665738da6101e6c15f55[m
+Author: Vanshrichardiya <143334266+Vanshrichardiya@users.noreply.github.com>
+Date:   Sat Aug 17 17:21:39 2024 +0530
+
+    Delete Task 1
+
+[33mcommit 1114e941cab7cf7a96042c17bcb09272a807c6ff[m
+Author: arpitaa-k <23110045@iitgn.ac.in>
+Date:   Sat Aug 17 17:19:14 2024 +0530
+
+    Create file1
+
+[33mcommit 55d30a4b5f0f84922a2613d8f970a59a31d6e748[m
+Author: arpitaa-k <23110045@iitgn.ac.in>
+Date:   Sat Aug 17 17:16:12 2024 +0530
+
+    Create Task 1
+
+[33mcommit 49dbf321fd0ade371326db5effd944d9c439ca52[m
+Author: Ayush <ashri41997@gmail.com>
+Date:   Tue Aug 13 18:08:33 2024 +0530
+
+    Update README.md
+    
+    fixed minor typos.
+
+[33mcommit df6aa724f33a7a7fd78e35bce54cf106be766779[m
+Merge: f7d98c4 5349891
+Author: Nipun Batra <nipunbatra0@gmail.com>
+Date:   Tue Aug 13 17:57:24 2024 +0530
+
+    Merge pull request #1 from AyushShrivstava/master
+    
+    initial commit
+
+[33mcommit 5349891d23be023cd5fead2ed4467e7127dafe30[m
+Author: Ayush Shrivastava <ayushshrivastava@Ayushs-MacBook-Air-3.local>
+Date:   Tue Aug 13 16:04:49 2024 +0530
+
+    initial commit
+
+[33mcommit f7d98c4ccbbb372097c46b1ad2c9a319a0c89791[m
+Author: Nipun Batra <nipunbatra0@gmail.com>
+Date:   Tue Aug 13 15:42:47 2024 +0530
+
+    Create README.md
