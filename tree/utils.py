@@ -6,72 +6,76 @@ There is no restriction on following the below template, these fucntions are her
 import pandas as pd
 
 def one_hot_encoding(X: pd.DataFrame) -> pd.DataFrame:
-    """
-    Function to perform one hot encoding on the input data
-    """
-
-    pass
+    return pd.get_dummies(X)
 
 def check_ifreal(y: pd.Series) -> bool:
-    """
-    Function to check if the given series has real or discrete values
-    """
-
-    pass
-
+    return pd.api.types.is_numeric_dtype(y)
 
 def entropy(Y: pd.Series) -> float:
     """
-    Function to calculate the entropy
+    Function to calculate the entropy without using any additional libraries.
     """
+    probs = Y.value_counts(normalize=True)  # Calculate the probability of each class
+    return -sum(probs * probs.apply(lambda p: (0 if p == 0 else log2(p))))
 
-    pass
-
+def log2(x):
+    """
+    Manually compute the log base 2 of x without importing any libraries.
+    """
+    from math import log
+    return log(x) / log(2)
 
 def gini_index(Y: pd.Series) -> float:
-    """
-    Function to calculate the gini index
-    """
+    probs = Y.value_counts(normalize=True)
+    return 1 - sum(probs ** 2)
 
-    pass
-
+def mse(Y: pd.Series) -> float:
+    mean_y = Y.mean()
+    return ((Y - mean_y) ** 2).mean()
 
 def information_gain(Y: pd.Series, attr: pd.Series, criterion: str) -> float:
-    """
-    Function to calculate the information gain using criterion (entropy, gini index or MSE)
-    """
+    if criterion == "information_gain":
+        base_criterion = entropy(Y)
+    elif criterion == "gini_index":
+        base_criterion = gini_index(Y)
+    else:
+        base_criterion = mse(Y)
 
-    pass
-
+    values = attr.unique()
+    weighted_sum = 0
+    for val in values:
+        subset = Y[attr == val]
+        weight = len(subset) / len(Y)
+        if criterion == "information_gain":
+            weighted_sum += weight * entropy(subset)
+        elif criterion == "gini_index":
+            weighted_sum += weight * gini_index(subset)
+        else:
+            weighted_sum += weight * mse(subset)
+    
+    if criterion in ["information_gain", "gini_index"]:
+        return base_criterion - weighted_sum
+    else:
+        return weighted_sum
 
 def opt_split_attribute(X: pd.DataFrame, y: pd.Series, criterion, features: pd.Series):
-    """
-    Function to find the optimal attribute to split about.
-    If needed you can split this function into 2, one for discrete and one for real valued features.
-    You can also change the parameters of this function according to your implementation.
-
-    features: pd.Series is a list of all the attributes we have to split upon
-
-    return: attribute to split upon
-    """
-
-    # According to wheather the features are real or discrete valued and the criterion, find the attribute from the features series with the maximum information gain (entropy or varinace based on the type of output) or minimum gini index (discrete output).
-
-    pass
-
+    best_attr = None
+    best_gain = -float('inf')
+    
+    for feature in features:
+        gain = information_gain(y, X[feature], criterion)
+        if gain > best_gain:
+            best_gain = gain
+            best_attr = feature
+            
+    return best_attr
 
 def split_data(X: pd.DataFrame, y: pd.Series, attribute, value):
-    """
-    Funtion to split the data according to an attribute.
-    If needed you can split this function into 2, one for discrete and one for real valued features.
-    You can also change the parameters of this function according to your implementation.
-
-    attribute: attribute/feature to split upon
-    value: value of that attribute to split upon
-
-    return: splitted data(Input and output)
-    """
-
-    # Split the data based on a particular value of a particular attribute. You may use masking as a tool to split the data.
-
-    pass
+    if pd.api.types.is_numeric_dtype(X[attribute]):
+        left_indices = X[attribute] <= value
+        right_indices = X[attribute] > value
+    else:
+        left_indices = X[attribute] == value
+        right_indices = X[attribute] != value
+        
+    return X[left_indices], y[left_indices], X[right_indices], y[right_indices]
